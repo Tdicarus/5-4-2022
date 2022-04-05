@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:layout_marginLeft="10dp">
 
     <TextView
         android:layout_width="match_parent"
@@ -71,16 +72,29 @@
             android:layout_weight="3"
             android:textSize="25dp"
             android:text="Attempts:"
-            android:layout_marginLeft="10dp"/>
+           />
 
         <TextView
+            android:id="@+id/tvattempt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="7"
             android:textSize="25dp"
             android:layout_marginLeft="20dp"/>
-
-
-
     </LinearLayout>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:text="Login"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:id="@+id/toastlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"/>
+    
 </LinearLayout>
